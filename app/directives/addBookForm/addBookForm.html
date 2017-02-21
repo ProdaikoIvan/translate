@@ -1,0 +1,51 @@
+<div layout="column" ng-cloak class="md-inline-form form-add-container">
+    <md-content layout-padding>
+        <form name="addBookForm" ng-submit="add.getData(addBookForm)" novalidate>
+                <div layout-gt="row">
+                    <md-input-container class="md-block padding">
+                        <label>Book name</label>
+                        <input name="name" ng-model="add.book.name">
+                        <div ng-show="addBookForm.$submitted || addBookForm.name.$touched">
+                            <span ng-show="addBookForm.name.$error.required">This field is required.</span>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block padding">
+                        <label>Author</label>
+                        <input name="author" ng-model="add.book.author">
+                    </md-input-container>
+                    <md-input-container class="md-block padding">
+                        <label>Year</label>
+                        <input name="year" ng-model="add.book.year" type="number" ng-pattern="/^(1\d{3}|20\d{2})$/">
+                        <div ng-show="addBookForm.$submitted">
+                            <span ng-show="addBookForm.year.$error.pattern">Wrong format.</span>
+                        </div>
+                    </md-input-container>
+                    <div layout="row" layout-align="center">Select language</div>
+                    <div layout="row" layout-align="space-between center">
+                        <md-select name="originLanguage" ng-model="add.book.native_lang" placeholder="Original" class="md-no-underline selectLanguage">
+                            <md-option value="en-GB">en-GB</md-option>
+                            <md-option value="ru-RU">ru-RU</md-option>
+                            <md-option value="de-DE">de-DE</md-option>
+                        </md-select>
+                        <md-select name="translateLanguage" ng-model="add.book.foreign_lang" placeholder="Translate" class="md-no-underline selectLanguage">
+                            <md-option value="en-GB">en-GB</md-option>
+                            <md-option value="ru-RU">ru-RU</md-option>
+                            <md-option value="de-DE">de-DE</md-option>
+                        </md-select>
+                    </div>
+                    <div layout="row" layout-align="space-between center">
+                        <div class="file-input-container">
+                            <label for="input-book-id" class="md-button md-raised">Choose Book</label>
+                            <input class="ng-hide" accept="application/pdf" id="input-book-id" onchange="angular.element(this).scope().uploadBook(this)"
+                                type="file" ng-model="add.book.pdf">
+                        </div>
+                        <div class="file-input-container">
+                            <label for="input-cover-id" class="md-button md-raised">Choose Cover</label>
+                            <input class="ng-hide" accept="image/jpeg,image/png,image/gif" id="input-cover-id" onchange="angular.element(this).scope().uploadCover(this)"
+                                type="file" ng-model="add.book.photo">
+                        </div>
+                    </div>
+                <md-button type="submit" flex="100" class="md-raised sentBookbtn">Send</md-button>
+        </form>
+    </md-content>
+    </div>

@@ -1,0 +1,31 @@
+<!--md-disable-backdrop=""-->
+<!--md-whiteframe="4"-->
+
+<md-sidenav  ng-class="nav.opening?'navigation-close' : 'navigation-open'" flex-offset-xs="0" class="md-sidenav-left navigation"
+  md-component-id="left" md-is-locked-open="vm.lockLeft">
+  <md-toolbar class="nav-btn-open" layout="row" layout-align="end center">
+    <md-icon ng-click="nav.open()" md-svg-src="content/icons/ic_dehaze_black_24px.svg" aria-label="android"></md-icon>
+  </md-toolbar>
+  <md-content class="nav-list-container">
+    <md-list flex>
+      <md-list-item class="md-2-line list-nav" ng-click="null">
+        <md-icon md-svg-src="content/icons/add.svg"></md-icon>
+        <div class="md-list-item-text btn-nav">
+          <h3>Books</h3>
+        </div>
+      </md-list-item>
+      <md-list-item class="md-2-line list-nav" ng-click="null">
+        <md-icon md-svg-src="content/icons/list.svg"></md-icon>
+        <div class="md-list-item-text btn-nav">
+          <h3>Some Item</h3>
+        </div>
+      </md-list-item>
+      <md-list-item class="md-2-line list-nav" ng-click="null">
+        <md-icon md-svg-src="content/icons/pay.svg"></md-icon>
+        <div class="md-list-item-text btn-nav">
+          <h3>Payment</h3>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-content>
+  </md-sidenav>

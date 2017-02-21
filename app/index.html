@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="content/style/main.css">
+</head>
+
+<body>
+
+    <ui-view></ui-view>
+
+    <!--Libs-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="libs/angular-aria/angular-aria.min.js"></script>
+    <script src="libs/angular-animate/angular-animate.min.js"></script>
+    <script src="libs/angular-messages/angular-messages.min.js"></script>
+    <script src="libs/angular-material/angular-material.min.js"></script>
+
+    <!--App-->
+    <script src="app.js"></script>
+    <script src="config.app.js"></script>
+    <script src="config.js"></script>
+
+    <!--services-->
+    <script src="services/url.js"></script>
+    <script src="services/request.js"></script>
+    <script src="services/convert/convertBookUrl.js"></script>
+
+    <script src="services/validation/validation.js"></script>
+
+    <!--templates-->
+    <script src="directives/navigation/navigation.js"></script>
+    <script src="directives/navigation/Navigation.Ctrl.js"></script>
+    <script src="directives/header/header.js"></script>
+    <script src="directives/addBookForm/AddBookForm.Ctrl.js"></script>
+    <script src="directives/addBookForm/addBookForm.js"></script>
+    <script src="directives/listbooks/listBook.js"></script>
+    <script src="directives/listbooks/listBookCtrl.js"></script>
+
+    <!--controllers-->
+    <script src="templates/login/LoginCtrl.js"></script>
+    <script src="templates/books/booksCtrl.js"></script>
+
+</body>
+
+</html>

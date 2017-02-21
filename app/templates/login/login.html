@@ -1,0 +1,36 @@
+<div class="wholeHeightBlock flexbox-parent md-inline-form tabsdemoDynamicHeight" layout="row" layout-align="center center" ng-cloak>
+    <md-content class=loginFormContainer>
+        <md-tabs md-dynamic-height="" md-border-bottom="">
+            <md-tab label="Login">
+                <md-content class="md-padding">
+                    <form name="loginForm" class="loginForm" ng-submit="vm.login(loginForm)" novalidate>
+                        <md-input-container class="input-container">
+                            <label>Login</label>
+                            <input ng-model="vm.userLogin.login" type="text" required md-maxlength="20" md-no-asterisk md-autofoucs>
+                        </md-input-container>
+                        <md-input-container class="input-container">
+                            <label>Password</label>
+                            <input ng-model="vm.userLogin.password" type="password" required md-maxlength="20" md-no-asterisk>
+                        </md-input-container>
+                        <md-button type="submit" class="md-raised md-primary">Login</md-button>
+                    </form>
+                </md-content>
+            </md-tab>
+            <md-tab label="Registration">
+                <md-content class="md-padding">
+                    <form name="registrationForm" class="loginForm" ng-submit="vm.registration(registrationForm)" novalidate>
+                        <md-input-container class="input-container">
+                            <label>Login</label>
+                            <input ng-model="vm.userRegisntation.login" type="text" required md-maxlength="20" md-no-asterisk md-autofoucs>
+                        </md-input-container>
+                        <md-input-container class="input-container">
+                            <label>Password</label>
+                            <input ng-model="vm.userRegisntation.password" type="password" required md-maxlength="20" md-no-asterisk>
+                        </md-input-container>
+                        <md-button type="submit" class="md-raised md-primary">Registration</md-button>
+                    </form>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

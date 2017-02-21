@@ -1,0 +1,161 @@
+body {
+    color: #444;
+}
+
+.md-block {
+    margin: 0;
+}
+
+
+/*Login*/
+
+.wholeHeightBlock {
+    height: 100%;
+}
+
+.input-container {
+    width: 100%;
+    min-width: 300px;
+}
+
+.loginFormContainer {
+    max-width: 400px;
+}
+
+.section-content {
+    margin: auto;
+    max-width: 500px;
+}
+
+
+/*header*/
+
+.header-block {
+    border-radius: 0 0 10px 10px;
+    z-index: 5;
+    -webkit-box-shadow: 0 5px 6px -6px #333;
+    -moz-box-shadow: 0 5px 6px -6px #333;
+    box-shadow: 0 5px 6px -6px #333;
+    background:#fff !important;
+}
+
+.header-block h2 {
+    color: #444 !important;
+    font-size: 1.5em;
+}
+
+
+/*navigation*/
+
+.navigation {
+    margin-top: 10px;
+    float: left;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 5px 6px -6px black;
+    -moz-box-shadow: 0 5px 6px -6px black;
+    box-shadow: 0 5px 6px -6px black;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-btn-open {
+    border-bottom: 1px solid #ccc;
+    background: #777;
+    background: linear-gradient(#fff, #eee) #fff;
+     
+}
+.list-nav:hover{
+
+        box-shadow:  1px 1px 0 #fff, 
+                    inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-open {
+    width: 200px;
+    min-width: 0;
+}
+
+.navigation-close {
+    width: 50px;
+    min-width: 0;
+}
+
+.navigation md-icon {
+    margin-right: 13px;
+}
+
+.list-nav {
+    padding: 0 !important;
+    min-height: 50px !important;
+}
+.list-nav .md-button {
+    padding: 0 !important;
+    min-width: 0;
+    min-height: 50px !important;
+}
+
+.list-nav md-icon {
+    margin: auto 13px !important;
+}
+
+.navigation md-list-item.md-2-line:before,
+.navigation md-list-item.md-2-line>.md-no-style:before {
+    min-height: 50px;
+}
+
+
+/*books*/
+.input-container {
+    width: 100%;
+}
+
+.file-input-container {
+    padding: 10px 0 20px 0;
+}
+
+.sentBookbtn,
+.file-input-container label {
+    margin: 0;
+    
+}
+
+.selectLanguage {
+    margin-top: 10px;
+}
+
+.card-add-form {
+    min-width: 300px;
+}
+
+.add-book-container .sentBookbtn {
+    width: 100%;
+
+}
+
+.container-add-book {
+    overflow: hidden;
+}
+
+.cardBook {
+    max-height: 200px !important;
+    min-width: 230px;
+}
+
+.cover-book {
+    height: 100%;
+    width: auto;
+}
+
+.form-add-container{
+    margin-top: 20px;
+}
+.bookName, 
+.coverName{
+    display:inline-block; 
+    height: 36px;
+}
